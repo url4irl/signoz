@@ -1,3 +1,10 @@
+# Customization from URL4IRL
+# Expose the network so that Coolify's Traefik instance can access SigNoz's frontend service
+# and make it available under TCP.
+networks:
+  coolify:
+    external: true
+
 include:
   - test-app-docker-compose.yaml
   - docker-compose-minimal.yaml
