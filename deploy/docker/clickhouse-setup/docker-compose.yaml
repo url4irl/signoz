@@ -1,8 +1,9 @@
 # Customization from URL4IRL
-# Expose the network so that Coolify's Traefik instance can access SigNoz's frontend service
-# and make it available under TCP.
+# Expose ceres default network so that Coolify's Traefik instance can
+# connect to SigNoz's frontend service and make it available under a
+# secure subdomain of URL4IRL's domain.
 networks:
-  coolify:
+  ceres_default:
     external: true
 
 include:
